@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-        admaglev = MFAdMaglev.init();
+//        admaglev = MFAdMaglev.init();
+        admaglev = MFAdMaglev.init(location: [MFAdMaglevLocation.AdMaglevTop, MFAdMaglevLocation.AdMaglevRIGHT])
         admaglev?.bannerId = "9800";
         admaglev?.delegate = self;
         admaglev?.debugInfo(true);
